@@ -1,0 +1,16 @@
+
+
+
+create procedure prn_ticket_only(t_ticket_no ticket.ticket_no%type) as
+	v_bus_no		ticket.bus_no%type;	
+	v_date_of_journey	ticket.date_of_journey%type;
+	v_no_seats		ticket.no_seats%type;
+	v_cell_no		ticket.cell_no%type;
+	v_address		ticket.address%type;
+begin
+	select bus_no,date_of_journey,no_seats,cell_no,address
+	into v_bus_no,v_date_of_journey,v_no_seats,v_cell_no,v_address
+	from ticket
+	where ticket_no=t_ticket_no;
+	dbms_output.put_line(t_ticket_no||' '||v_bus_no||' '||v_date_of_journey||' '||v_no_seats||' '||v_cell_no||' '||v_address);
+end;

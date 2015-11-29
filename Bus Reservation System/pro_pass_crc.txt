@@ -1,0 +1,12 @@
+
+
+
+ create procedure ad_pass(p_ppno passenger.ppno%type,
+			       p_ticket_no passenger.ticket_no%type,
+			       p_name passenger.name%type,
+			       p_age passenger.age%type,
+			       p_sex passenger.sex%type) as
+ begin
+	insert into passenger values(p_ppno,p_ticket_no,p_name,p_age,p_sex);
+ end;
+ /

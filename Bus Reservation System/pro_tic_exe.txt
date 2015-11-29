@@ -1,0 +1,19 @@
+
+
+
+declare
+	v_ticket_no		ticket.ticket_no%type;
+	v_bus_no		ticket.bus_no%type;
+	v_date_of_journey	ticket.date_of_journey%type;
+	v_no_seats		ticket.no_seats%type;
+	v_cell_no		ticket.cell_no%type;
+	v_address		ticket.address%type;
+begin
+	v_ticket_no		:=&v_ticket_no;
+	v_bus_no		:=&v_bus_no;
+	v_date_of_journey	:=&v_date_of_journey;
+	v_no_seats		:=&v_no_seats;
+	v_cell_no		:=&v_cell_no;
+	v_address		:=&v_address;
+	add_ticket(v_ticket_no,v_bus_no,v_date_of_journey,v_no_seats,v_cell_no,v_address);
+end;

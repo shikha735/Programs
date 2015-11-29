@@ -1,0 +1,17 @@
+
+
+
+Declare
+       v_bus_no 	bus.bus_no%type;
+       v_source 	bus.source%type;
+       v_destination 	bus.destination%type;
+       v_departure_time bus.departure_time%type;
+       v_no_seats 	bus.no_seats%type;
+begin
+       v_bus_no 		:=&v_bus_no;
+       v_source 		:=&v_source;
+       v_destination 		:=&v_destination;
+       v_departure_time 	:=&v_departure_time;
+       v_no_seats 		:=&v_no_seats;
+addd_bus(v_bus_no,v_source,v_destination,v_departure_time,v_no_seats);
+end;

@@ -1,0 +1,25 @@
+  
+
+
+  create or replace trigger update_disp after update of age on passenger for each row
+  when(old.age!=new.age)
+  begin
+	dbms_output.put_line('age'||:old.age||'has changed to'||:new.age);
+  end;
+
+  OUTPUT:
+  SQL> Set serveroutput on;
+  SQL> update passenger set age=age+1;
+
+  age19has changed to20
+  age19has changed to20
+  age31has changed to32
+  age31has changed to32
+  age29has changed to30
+  age29has changed to30
+  age49has changed to50
+  age49has changed to50
+  age11has changed to12
+  age11has changed to12
+
+  5 rows updated.

@@ -1,0 +1,9 @@
+
+
+
+declare
+	v_ppno	passenger.ppno%type;
+begin
+	v_ppno :=&v_ppno;
+	prn_passsenger(v_ppno);
+end;

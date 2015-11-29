@@ -1,0 +1,10 @@
+
+
+
+declare
+	v_bus_no	bus.bus_no%type;
+begin
+	v_bus_no   :=   &v_bus_no;
+	pr_bus_only(v_bus_no);
+end;
+/

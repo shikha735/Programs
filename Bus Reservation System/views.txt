@@ -1,0 +1,56 @@
+GRANTING VIEWS:
+grant create view to B2
+
+CREATING OF VIEWS:
+
+1.create view vaccount as select name,salary from instructor;
+SQL> select * from vaccount;
+
+NAME                     SALARY
+-------------------- ----------
+Srinivasan                65000
+Wu                        90000
+Mozart                    40000
+Einstein                  95000
+El Said                   60000
+Gold                      87000
+Katz                      75000
+Califieri                 62000
+Singh                     80000
+Crick                     72000
+Brandt                    92000
+Kim                       80000
+
+2.create or replace view vaco as select name,salary from instructor where dept_name='Comp.Sci.';
+View created.
+
+SQL> select * from vaco;
+
+NAME                     SALARY
+-------------------- ----------
+Srinivasan                65000
+Katz                      75000
+Brandt                    92000
+
+
+UPDATING VIEW:
+
+update vaccount set name='IT' where name='Einstein';
+1 row updated.
+
+SQL> select * from vaccount;
+
+NAME                     SALARY
+-------------------- ----------
+Srinivasan                65000
+Wu                        90000
+Mozart                    40000
+IT                        95000
+El Said                   60000
+Gold                      87000
+Katz                      75000
+Califieri                 62000
+Singh                     80000
+Crick                     72000
+Brandt                    92000
+Kim                       80000

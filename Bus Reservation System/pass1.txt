@@ -1,0 +1,24 @@
+
+
+
+  declare
+	v_passenger_name passenger.name%type;
+	cursor c is select name from passenger;
+  begin
+	open c;
+	loop
+		fetch c into v_passenger_name;
+		exit when c%notfound;
+		dbms_output.put_line(v_passenger_name);
+	end loop;
+  end;
+
+  OUTPUT:
+  SQL> /
+  Sivani
+  ravi
+  raghu
+  supriya
+  paavani
+
+  PL/SQL procedure successfully completed.

@@ -1,0 +1,14 @@
+
+
+
+create procedure prn_passenger(p_ppno passenger.ppno%type) as
+	v_name	passenger.name%type;
+	v_age	passenger.age%type;
+	v_sex	passenger.sex%type;
+begin
+	select name,age,sex
+	into v_name,v_age,v_sex
+	from passenger
+	where ppno=p_ppno;
+	dbms_output.put_line(p_ppno||' '||v_name||' '||v_age||' '||v_sex);
+end;

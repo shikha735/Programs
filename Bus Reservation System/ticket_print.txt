@@ -1,0 +1,9 @@
+
+
+
+declare
+	v_ticket_no	ticket.ticket_no%type;
+begin
+	v_ticket_no := &v_ticket_no;
+	prn_ticket_only(v_ticket_no);
+end;

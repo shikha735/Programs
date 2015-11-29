@@ -1,0 +1,15 @@
+
+
+
+create procedure pr_bus_only(t_bus_no bus.bus_no%type) as
+v_source		bus.source%type;
+v_destination		bus.destination%type;
+v_departure_time	bus.departure_time%type;
+v_no_seats		bus.v_no_seats%type;
+begin
+	select source,destination,departure_time,no_seats
+	into v_source,v_destination,v_departure_time,v_no_seats
+	from bus
+	where bus_no=t_bus_no;
+	dbms_output.put_line(t_bus_no||' '||v_source||' '||v_destination||' '||v_departure_time||' '||v_no_seats);
+end;

@@ -1,0 +1,17 @@
+
+
+
+  declare
+	v_ppno		passenger.ppno%type;
+	v_ticket_no	passenger.ticket_no%type;
+	v_name		passenger.name%type;
+	v_age		passenger.age%type;
+	v_sex		passenger.sex%type;
+  begin
+	v_ppno		:=&v_ppno;
+	v_ticket_no	:=&v_ticket_no;
+	v_name		:=&v_name;
+	v_age		:=&v_age;
+	v_sex		:=&v_sex;
+	ad_pass(v_ppno,v_ticket_no,v_name,v_age,v_sex);
+  end;

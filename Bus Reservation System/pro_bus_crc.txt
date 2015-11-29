@@ -1,0 +1,12 @@
+
+
+
+create procedure addd_bus(b_bus_no bus.bus_no%type,
+			b_source bus.source%type,
+			b_destination bus.destination%type,
+			b_departure_time bus.departure_time%type,
+			b_no_seats bus.no_seats%type)as
+begin
+ insert into bus values(b_bus_no,b_source,b_destination,b_departure_time,b_no_seats);
+end;
+/

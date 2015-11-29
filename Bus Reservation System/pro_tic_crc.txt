@@ -1,0 +1,13 @@
+
+
+
+create procedure add_ticket(t_ticket_no ticket.ticket_no%type,
+			    t_bus_no ticket.bus_no%type,
+			    t_date_of_journey ticket.date_of_journey%type,
+			    t_no_seats ticket.no_seats%type,
+			    t_cell_no ticket.cell_no%type,
+			    t_address ticket.address%type) as
+begin
+	insert into ticket values(t_ticket_no,t_bus_no,t_date_of_journey,t_no_seats,t_cell_no,t_address);
+end;
+	
