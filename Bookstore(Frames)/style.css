@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+html, body{
+	margin:0;
+}
+
+h1{
+	font-size:40px;
+	color:#321900;
+	text-align:center;
+}
+
+a{
+	text-decoration:none;
+}
+
+img {
+    float:left;
+    margin: 0 0 10px 55px;
+}
+#menu{
+	margin:41px 0 0 0;
+	background-color:#FF4545;
+	height:50px;
+	width:100%;
+}
+#home{
+	line-height:50px;
+	text-align:center;
+	height:50px;
+	width:20%;
+	display:inline-block;
+}
+#login{
+	line-height:50px;
+	text-align:center;
+	height:50px;
+	width:20%;
+	display:inline-block;
+}
+#reg{
+	line-height:50px;
+	text-align:center;
+	height:50px;
+	width:20%;
+	display:inline-block;
+}
+#catlg{
+	line-height:50px;
+	text-align:center;
+	height:50px;
+	width:20%;
+	display:inline-block;
+}
+#cart{
+	line-height:50px;
+	text-align:center;
+	height:50px;
+	width:18%;
+	display:inline-block;
+}
