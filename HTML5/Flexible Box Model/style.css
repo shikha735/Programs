@@ -1,0 +1,75 @@
+*{
+	margin:0;
+	padding:0;
+}
+h1{
+	font: bold 20px Tahoma, Geneva, sans-serif;
+}
+
+h2{
+	font: bold 14px Tahoma, Geneva, sans-serif;
+}
+
+header, section, nav, aside, article, hgroup{
+	display:block;
+}
+
+body{
+	border:1px solid #33C;
+	width:100%;
+	display:-webkit-box;
+	-webkit-box-pack:center;
+}
+
+#big_wrapper{
+	border:1px solid #FFCC0B;
+	margin:20px 0px;
+	max-width:1000px;
+	display:-webkit-box;
+	-webkit-box-orient:vertical;
+	-webkit-box-flex:1;
+}
+
+#top_header{
+	text-align:center;
+	background:#096;
+	border:3px solid #003;
+	padding:20px;
+}
+
+#top_menu{
+	border:1px solid red;
+	background:blue;	
+	color:#999;
+}
+#top_menu li{
+	list-style:none;
+	display:inline-block;
+	padding:5px;
+	font:bold 14px Georgia, "Times New Roman", Times, serif;
+}
+
+#wrapper_div{
+	display:-webkit-box;
+	-webkit-box-orient:horizontal;
+}
+
+#main_section{
+	-webkit-box-flex:1;
+	padding:20px;
+	margin:20px;
+	border:1px solid #606;
+}
+
+#side_menu{
+	border:1px solid #030;
+	width:220px;
+	padding:30px;
+	margin:20px 0px;
+}
+
+#the_footer{
+	text-align:center;
+	padding:20px;
+	border-top:2px solid green;
+}

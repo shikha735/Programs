@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>
+p[name]{
+		/*Attribute selectors*/
+		color:#F36;
+}
+
+p[name="One"]{
+		/*Attribute selectors with specific value*/
+	color:#39F;
+}
+
+p[name*="regex"]{
+	/*Regular expressions - regex  present anywhere */	
+	color:#C09;
+}
+
+p[name^="regex"]{
+	/*Regular expressions - beginning with regex*/	
+	color:#C09;
+}
+
+p[name$="regex"]{
+	/*Regular expressions - ending with regex*/	
+	color:#9F6;
+}
+</style>
+<title>HTML5 Websites</title>
+</head>
+
+<body>
+<p name="first">First paragraph</p>
+<p name="One">Second paragraph</p>
+<p name="Two">Third paragraph</p>
+<p name="regexOne">Regular expressions 1</p>
+    <p name="tworegex">Regular expressions 2</p>
+<p name="threeregexend">Regular expressions 3</p>
+    <hr />
+</body>
+</html>
