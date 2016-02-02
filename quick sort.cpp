@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <cstdlib>
 using namespace std;
 
 int partition(vector<int> &A,int start,int end){
@@ -15,10 +16,16 @@ int partition(vector<int> &A,int start,int end){
 	return pIndex;
 }
 
+int randomizedPartition(vector<int> &A,int start,int end){
+	int pivotIndex = start + (rand()%(end - start + 1));
+	swap(A[pivotIndex],A[end]);
+	return partition(A,start,end);
+}
+
 void quickSort(vector<int> &A, int start, int end){
 	int pIndex;
 	if(start < end){
-		pIndex = partition(A,start,end);
+		pIndex = randomizedPartition(A,start,end);
 		quickSort(A,start,pIndex-1);
 		quickSort(A,pIndex+1,end);
 	}
