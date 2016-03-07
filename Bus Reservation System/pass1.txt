@@ -15,10 +15,10 @@
 
   OUTPUT:
   SQL> /
-  Sivani
-  ravi
-  raghu
-  supriya
-  paavani
+  Shikha
+  Sreya
+  Mithra
+  Aishwarya
+  Anjali
 
   PL/SQL procedure successfully completed.
