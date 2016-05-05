@@ -4,7 +4,7 @@ using namespace std;
 
 void bubbleSort(vector<int> &A, int N){
 	bool sorted;
-	for(int i=1;i<N-1;i++){
+	for(int i=1;i<N;i++){
 		sorted = true;
 		for(int j=0;j<N-i;j++){
 			if(A[j] > A[j+1]){
