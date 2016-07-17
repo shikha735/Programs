@@ -2,7 +2,8 @@
 // You are given an n x n 2D matrix representing an image.
 // Rotate the image by 90 degrees (clockwise).
 // You need to do this in place.
-
+#include <vector>
+using namespace std;
 void Solution::rotate(vector<vector<int> > &A) {
     int temp;
     int n=A.size();
@@ -25,4 +26,17 @@ void Solution::rotate(vector<vector<int> > &A) {
             A[j][n-i-1]=temp;
         }
     }
+}
+
+// For m x n matrix:
+
+vector<int> rotateMxN(vector<vector<int>> A){
+	vector<int> res;
+	for(int r=0;r<m;r++){
+		for (int c = 0; c < n; c++)
+		{
+			res[c][m-r-1] = A[r][c];
+		}
+	}
+	return res;
 }
