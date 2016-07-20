@@ -10,13 +10,13 @@ void Solution::rotate(vector<vector<int> > &A) {
     for(int i=0;i<n/2;i++){
         for(int j=i;j<n-i-1;j++){
 
-        	// storing left
+            // storing left
             temp=A[i][j];
 
             // right to top
             A[i][j]=A[n-j-1][i];
 
-            // bottom to rightw
+            // bottom to right
             A[n-j-1][i]=A[n-i-1][n-j-1];
 
             // left to bottom
@@ -31,7 +31,7 @@ void Solution::rotate(vector<vector<int> > &A) {
 // For m x n matrix:
 
 vector<int> rotateMxN(vector<vector<int>> A){
-	vector<int> res;
+	vector<vector<int>> res;
 	for(int r=0;r<m;r++){
 		for (int c = 0; c < n; c++)
 		{

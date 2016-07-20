@@ -1,6 +1,8 @@
 // https://www.interviewbit.com/courses/programming/topics/arrays/problems/positive/
 // Given an unsorted integer array, find the first missing positive integer.
 
+
+// removes negative no.s
 int moveNeg(vector<int> &A) {
     int startIndex=0;
     for(int i=0;i<A.size();i++){
